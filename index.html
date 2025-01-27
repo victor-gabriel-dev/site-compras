@@ -1,0 +1,177 @@
+<!doctype html>
+<html translate="no" lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cakto</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+
+    <script>
+      !(function (e, t) {
+        'object' == typeof exports && 'object' == typeof module
+          ? (module.exports = t())
+          : 'function' == typeof define && define.amd
+            ? define([], t)
+            : 'object' == typeof exports
+              ? (exports.install = t())
+              : (e.install = t());
+      })(window, function () {
+        return (function (e) {
+          var t = {};
+          function n(o) {
+            if (t[o]) return t[o].exports;
+            var r = (t[o] = { i: o, l: !1, exports: {} });
+            return e[o].call(r.exports, r, r.exports, n), (r.l = !0), r.exports;
+          }
+          return (
+            (n.m = e),
+            (n.c = t),
+            (n.d = function (e, t, o) {
+              n.o(e, t) || Object.defineProperty(e, t, { enumerable: !0, get: o });
+            }),
+            (n.r = function (e) {
+              'undefined' != typeof Symbol &&
+                Symbol.toStringTag &&
+                Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
+                Object.defineProperty(e, '__esModule', { value: !0 });
+            }),
+            (n.t = function (e, t) {
+              if ((1 & t && (e = n(e)), 8 & t)) return e;
+              if (4 & t && 'object' == typeof e && e && e.__esModule) return e;
+              var o = Object.create(null);
+              if (
+                (n.r(o),
+                Object.defineProperty(o, 'default', { enumerable: !0, value: e }),
+                2 & t && 'string' != typeof e)
+              )
+                for (var r in e)
+                  n.d(
+                    o,
+                    r,
+                    function (t) {
+                      return e[t];
+                    }.bind(null, r)
+                  );
+              return o;
+            }),
+            (n.n = function (e) {
+              var t =
+                e && e.__esModule
+                  ? function () {
+                      return e.default;
+                    }
+                  : function () {
+                      return e;
+                    };
+              return n.d(t, 'a', t), t;
+            }),
+            (n.o = function (e, t) {
+              return Object.prototype.hasOwnProperty.call(e, t);
+            }),
+            (n.p = ''),
+            n((n.s = 0))
+          );
+        })([
+          function (e, t, n) {
+            'use strict';
+            var o =
+              (this && this.__spreadArray) ||
+              function (e, t, n) {
+                if (n || 2 === arguments.length)
+                  for (var o, r = 0, i = t.length; r < i; r++)
+                    (!o && r in t) ||
+                      (o || (o = Array.prototype.slice.call(t, 0, r)), (o[r] = t[r]));
+                return e.concat(o || Array.prototype.slice.call(t));
+              };
+            Object.defineProperty(t, '__esModule', { value: !0 });
+            var r = function (e, t, n) {
+              var o,
+                i = e.createElement('script');
+              (i.type = 'text/javascript'),
+                (i.async = !0),
+                (i.src = t),
+                n &&
+                  (i.onerror = function () {
+                    r(e, n);
+                  });
+              var a = e.getElementsByTagName('script')[0];
+              null === (o = a.parentNode) || void 0 === o || o.insertBefore(i, a);
+            };
+            !(function (e, t, n) {
+              e.KwaiAnalyticsObject = n;
+              var i = (e[n] = e[n] || []);
+              i.methods = [
+                'page',
+                'track',
+                'identify',
+                'instances',
+                'debug',
+                'on',
+                'off',
+                'once',
+                'ready',
+                'alias',
+                'group',
+                'enableCookie',
+                'disableCookie'
+              ];
+              var a = function (e, t) {
+                e[t] = function () {
+                  for (var n = [], r = 0; r < arguments.length; r++) n[r] = arguments[r];
+                  var i = o([t], n, !0);
+                  e.push(i);
+                };
+              };
+              i.methods.forEach(function (e) {
+                a(i, e);
+              }),
+                (i.instance = function (e) {
+                  var t,
+                    n = (null === (t = i._i) || void 0 === t ? void 0 : t[e]) || [];
+                  return (
+                    i.methods.forEach(function (e) {
+                      a(n, e);
+                    }),
+                    n
+                  );
+                }),
+                (i.load = function (e, o) {
+                  var a = 'https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js';
+                  (i._i = i._i || {}),
+                    (i._i[e] = []),
+                    (i._i[e]._u = a),
+                    (i._t = i._t || {}),
+                    (i._t[e] = +new Date()),
+                    (i._o = i._o || {}),
+                    (i._o[e] = o || {});
+                  var c = '?sdkid='.concat(e, '&lib=').concat(n);
+                  r(t, a + c, 'https://s16-11187.ap4r.com/kos/s101/nlav11187/pixel/events.js' + c);
+                });
+            })(window, document, 'kwaiq');
+          }
+        ]);
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-e58f587f.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-30a74a76.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-276c7934.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-utils-1779699b.js">
+    <link rel="stylesheet" href="/assets/vendor-react-e8a0ccb9.css">
+    <link rel="stylesheet" href="/assets/index-04cffb37.css">
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" className="fb-customerchat"></div>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/gh/efipay/js-payment-token-efi/dist/payment-token-efi.min.js"></script>
+    <script src="https://applepay.cdn-apple.com/jsapi/1.latest/apple-pay-sdk.js"></script>
+    <script async src="https://pay.google.com/gp/p/js/pay.js"></script>
+
+    
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'908a200aed25f17b',t:'MTczNzk5NTQwNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
